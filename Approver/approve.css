@@ -87,13 +87,3 @@ body {
   color: #000000;
   background-color: #ffffff
 }
-
-.tbl-leaves, .tbl-employees, .emp_table {
-    border: 0;
-}
-
-.tbl-leaves th, .tbl-leaves td,
-.tbl-employees th, .tbl-employees td,
-.emp_table th, .emp_table td {
-    padding: 10px 25px;
-}
