@@ -27,7 +27,7 @@ function login()
     }
     if(username === 'user' && password === 'pass@123')
     {
-        window.location.href = 'request.html';
+        window.location.href = '../Requests/request.html';
     }
     else
     {
