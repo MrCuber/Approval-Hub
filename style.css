@@ -1,0 +1,49 @@
+html {
+    height: 100%;
+}
+body {
+    margin:0;
+    padding:0;
+    font-family: sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+}
+.navbar li , .navbar > a
+{
+	margin: 5px;
+	font-size: 1.2rem;
+	font-weight: 600;
+	/*background-color: red;*/
+	border-radius: 20px;
+	padding: 5px 10px;
+}
+.navbar li:hover , .navbar > a:hover 
+{
+	background-color: rgb(104, 188, 211);
+	transition: .5s;
+}
+.navbar .active
+{
+	background-color:rgb(104, 188, 211);
+	border-radius: 20px;
+	padding: 5px 10px;
+}
+.headerset
+{
+	padding-top:5%;
+	box-sizing: border-box; 
+}
+.headerset h3
+{
+	font-size: 1.4rem;
+}
+.headerset h1
+{
+	font-size: 4rem;
+	font-weight: bold;
+}
+
+.rowsetting
+{
+	margin: 80px 0px;
+	padding: 10px;
+}

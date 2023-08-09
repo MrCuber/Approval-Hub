@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+    <meta charset="UTF-8">
+    <title>Approval Hub</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"><link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css'>
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css'>
+    <link rel="stylesheet" href="request.css">
+    <link rel="icon" type="image/x-icon" href="favicon.png">
+</head>
+<body>
+    <header class="navbar navbar-inverse navbar-fixed-top bs-docs-nav" role="banner">
+        <div class="container">
+          <div class="navbar-header">
+            <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-navbar-collapse">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a href="#" class="navbar-brand">Requester</a>
+          </div>
+          <nav class="collapse navbar-collapse bs-navbar-collapse" role="navigation">
+            <ul class="nav navbar-nav navbar-right">
+                <li class="active" >
+                    <a href="#" class="requests" onclick="selectRole()">Apply Request</a>
+                </li>
+              <li>
+                <a href="myrequests.html" class="requests" onclick="selectRole()">My Requests</a>
+              </li>
+              <li>
+                <a href="viewstatus.html" class="status" onclick="selectRole()">View Status</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </header>
+<div id="contact-form">
+  <form>
+      <label for="name">Name*</label>
+      <input type="text"
+          name="name"
+          id="name"
+          class="contact-input"
+          placeholder="Name*"
+          required>
+      <label for="Select Request">Select Request</label>
+          <select id="request_type">
+              <option disabled selected>SELECT Request</option>
+              <option value="leave request">Leave Request</option>
+              <option value="team change">Team Change Request</option>
+              <option value="project change">Project Change Request</option>
+              <option value="Mental health leave">Mental health leave</option>
+          </select>
+          <label for="leave_date">Request Date(For Leaves)</label>
+          <input type="date" id="leave_date">
+      <label for="message">Write a short description about your request</label>
+      <textarea 
+      name="message" 
+      id="message" 
+      class="contact-input"  
+      cols="24" 
+      rows="1" 
+      placeholder="Write text here..."></textarea>
+      <button id="send-btn" name="button" type="submit">Request</button>
+  </form>
+</div>
+<div class="env-body">
+  <div class="arrow-down"></div>
+  <div class="arrow-down-inner"></div>
+  <div class="note"></div>
+</div>
+<script src="request.js"></script>
+</body>
+</html>
