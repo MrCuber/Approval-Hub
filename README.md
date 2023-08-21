@@ -8,8 +8,8 @@ Motorq VIT Application Engineer Hackathon
 ### Requestor
 ![Login](Screenshots/Requester.png)
 
-### Approver
+<!--### Approver
 ![Login](Screenshots/Approve.png)
 
 ### Administrator
-![Login](Screenshots/Admin.png)
+![Login](Screenshots/Admin.png) -->
